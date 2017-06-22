@@ -55,6 +55,3 @@ target_link_libraries(${PROJECT_NAME} PUBLIC ${LIBS})
 
 #Adding the executable to the tests
 add_test(${PROJECT_NAME} ${PROJECT_NAME})
-#because only add_test don't want to work so use make check
-add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND}
-                  DEPENDS ${PROJECT_NAME})

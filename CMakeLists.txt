@@ -54,5 +54,4 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${INC_DIR})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${LIBS})
 
 #Adding the tests
-enable_testing()
 add_subdirectory(tests)
